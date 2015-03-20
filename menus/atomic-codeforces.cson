@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle atomic-codeforces'
+      'command': 'atomic-codeforces:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'atomic-codeforces'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'atomic-codeforces:toggle'
+        }
+      ]
+    ]
+  }
+]
